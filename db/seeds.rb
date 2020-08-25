@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+10.times do 
+    Coupon.create(
+        coupon_code: rand(1000...9999).to_s,
+        store: Faker::Restaurant.name
+    )
+end

@@ -1,0 +1,9 @@
+<h1> I heard you want to make a coupon of your own </h1>
+<h2> Well get at it you little bitch </h2>
+<%= form_for @coupon do |f| %>
+    <%= f.label :coupon_code %>
+    <%= f.text_field :coupon_code %>
+    <%= f.label :store %>
+    <%= f.text_field :store %>
+    <%= f.submit value: "Smack me" %>
+    <% end %>
