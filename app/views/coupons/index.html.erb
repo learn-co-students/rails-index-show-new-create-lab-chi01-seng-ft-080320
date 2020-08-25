@@ -1,0 +1,12 @@
+<h1> Hey you wanna see my coupons ;) </h1>
+
+<% @coupons.each do |coupon| %>
+    <p> <%= link_to coupon.coupon_code, coupon_path(coupon) %> </p>
+    <% end %>
+
+    <%= button_to "Create a Coupon", new_coupon_path, method: :get %>
+
+
+
+
+
