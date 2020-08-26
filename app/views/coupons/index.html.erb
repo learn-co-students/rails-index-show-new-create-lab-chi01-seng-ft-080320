@@ -2,6 +2,7 @@
 
 <% @coupons.each do |coupon| %>
   <p><%# link_to movie.title, movie_path(movie.id) %></p>
+  <h2><%= coupon.store %></h2>
   <p><%= link_to coupon.coupon_code, coupon_path(coupon) %></p>
   <p><%# link_to movie.title, movie %></p>
 <% end %>
