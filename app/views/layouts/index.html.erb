@@ -1,0 +1,10 @@
+<h1>Coupons Index Page</h1>
+
+<% @coupons.each do |coupon| %>
+  <p><%# link_to movie.title, movie_path(movie.id) %></p>
+  <p><%= link_to coupon.coupon_code, coupon_path(coupon) %></p>
+  <p><%# link_to movie.title, movie %></p>
+<% end %>
+
+<%# t.string "coupon_code" %>
+<%#  t.string "store" %>
