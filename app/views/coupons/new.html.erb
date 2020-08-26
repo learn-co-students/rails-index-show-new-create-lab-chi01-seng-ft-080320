@@ -1,0 +1,13 @@
+
+
+
+<%= form_tag coupons_path do %>
+    <h1> Coupon Form</h1>
+    <label> Input Coupon Code <label><br>
+    <%=text_field_tag name="coupon[coupon_code]"%><br><br>
+    <label> Input Store name for the coupon <label><br>
+    <%=text_field_tag name= 'coupon[store]'%><br><br>
+    <input type='submit' value= 'Submit Coupon'>
+<%end%>
+
+<%= params.inspect %>
